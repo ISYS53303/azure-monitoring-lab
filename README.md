@@ -1,9 +1,13 @@
 # Azure Monitoring Lab
 
-This repository contains code for an in-class lab that simulates monitoring an Azure Function under load. It demonstrates handling multiple incoming requests and performing background work.
+This repository provides code for an in-class lab that simulates monitoring and analyzing an Azure Function's response to various incoming requests.
 
-`student-client`: This directory holds the code for a client application that sends requests to the Azure Function. You can use this client to simulate workload and test the function's scalability.
+`student-client`: This directory contains the code for a client application that sends multiple requests to the Azure Function.
 
-`server`: This directory contains the Azure Function code ("backend") responsible for processing requests. The function calculates a Fibonacci sequence to represent "work" being performed.
+`server`: This directory houses the "backend" code for the Azure Function itself. It implements the logic for calculating a Fibonacci sequence, simulating workload for the function.
 
-This repository provides a valuable learning tool for understanding Azure Function behavior under concurrent requests.
+By running this lab, you can gain practical experience with:
+
+- Monitoring Azure Functions
+- Analyzing function response times under varying workloads
+- Simulating real-world scenarios with multiple requests
