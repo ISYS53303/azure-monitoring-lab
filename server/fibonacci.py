@@ -17,7 +17,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     try:
         # Randomize the chance of getting the sequence number or error
         error_check =random.randint(1,10)
-        if error_check % 2 == 0:
+        if error_check % 3 == 0:
             n = req.params.get('fib')
             response = fibonacci(int(n))
             return func.HttpResponse(f'Fibonacci number at sequence {n} is {response}', status_code=200)
